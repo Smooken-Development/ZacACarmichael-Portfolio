@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio for SmookenDevelopment by Zachary A. Carmichael.">
+    <link rel="stylesheet" href="temporary.css">
+    <title>SmookenDevelopment - Portfolio</title>
+</head>
+<body>
+		<div class="headerWrapper">
+			<header>
+				<h2>SmookenDevelopment</h2>
+				<span> - Zachary A. Carmichael</span>
+			</header>
+			<div class="buttonContainer">
+				<button class="headerButton" onclick="window.open('SMARTScholarship Resume PDF.pdf', '_blank');">CV</button>
+				<button class="headerButton" onclick="window.open('https://github.com/Smooken-Development', '_blank')">GitHub</button>
+			</div>
+		</div>
+		<div class="globeContainer">
+        <canvas src="backg.jpg"></canvas>
+		</div>
+
+        <div class="tabsContainer">
+            <button data-id="about" class="tabsButton active">About Me</button>
+            <button data-id="projects" class="tabsButton">Projects</button>
+            <button data-id="education" class="tabsButton">Education</button>
+            <button data-id="community" class="tabsButton">Community Involvement</button>
+			<button data-id="cv" class="tabsButton">My CV</button>
+            <button data-id="extras" class="tabsButton tabsButtonRight">Extras</button>
+        </div>
+		<div class="middleContainer">
+			<!--<aside id="aside1">Animation</aside>-->
+			<main>
+			<div class="tab-content">
+				<div id="about" class="tab-section active">
+					<div class="aboutSection">
+						<img class="aboutSection" src="Headshot.png" width="430" height="394" alt="Headshot of myself in a vest in the woods.">
+							<div>
+							 	<h2>About Me</h2>
+		<p>Hello! I'm Zachary A. Carmichael, a passionate computer science student with a deeply invested interest in cybersecurity, cryptography, and experimental (quantum) computing. My current venture in academics is fueled by a fascination with offensive and defensive cybersecurity, as well as prospective applications of quantum computing, both in cryptography and in chemistry. I hope to one day become a master in some field of quantum computing and contribute to the amazing and meaningful work organizations like <em>CERN</em>, <em>DARPA</em>, or <em>Quantinuum</em>.</p>
+		<p>To achieve this goal, I engage in independent studies in my free time to teach myself about quantum mechanics and quantum computing using free online resources, such as freeCodeCamp and online lectures from Harvard and MIT. While this is not impressive or unique in and of itself, I look forward to the day when I will be able to put theory into practice.</p>
+		<p>While completing my Associate’s degree, I worked part-time as the administrative assistant for the Online Learning Division at NMSU-A, where I helped ensure that all online courses met established quality standards before being delivered to students. During my time there, I was given the unique opportunity to handcraft custom applications and automation scripts that became the standard for our department for a time.</p>
+		<p>In addition, I was also given the <em>privilege</em> of serving as both the Recording Secretary and Vice President of Leadership for the <a href="https://www.ptk.org/join/alpha-nu-beta-chapter">Alpha Nu Beta</a> chapter of Phi Theta Kappa. During my time as VP of this chapter, our officers successfully rechartered the chapter after it had been disbanded during the pandemic; as well as helped our members gain access to unique, competitive scholarships. Some of my duties included documentation of all campus events, as well as coordinating campus-wide fundraising events.</p>
+
+		<p>After earning my Associate’s degree at NMSU-A, I transferred to the New Mexico Institute of Mining and Technology (NMT), where I am now pursuing my Bachelor’s degree in Computer Science. Alongside my studies, I am interning with the New Mexico Cybersecurity Center of Excellence (NMCCoE), where I have been given the opportunity to explore new applications of AI methodologies through a co-op with Sandia National Laboratories.</p>
+
+		<h3 style="padding-top: 10px">Skills</h3>
+								<ul class="aboutSection"><li>Python</li>|<li>C++</li>|<li>C#</li>|<li>Retrieval Augmented Generation (RAG)</li>|<li>Office 365 Suite</li>|<li>Leadership</li>|<li>Communication</li>|<li>Microsoft Access</li>|<li>LaTex</li>|<li>Discord Bot APIs</li>|<li>SQL</li>|<li>Data Cleaning</li>|<li>Ethical Web Scraping</li>|<li>Techincal Documentation</li></ul>
+								<h3 style="padding-top: 20px">Hobbies</h3>
+								<ul class="aboutSection"><li>3D Modeling</li>|<li>Programming</li>|<li>Cryptography</li>|<li>ARG Bot Scripting</li>|<li>Offroading</li>|<li>Self-Studying</li></ul>
+								<h3 style="padding-top: 20px">Personal Interests</h3>
+								<ul class="aboutSection"><li>Quantum Computing</li>|<li>Cybersecurity</li>|<li>Ethical Hacking</li>|<li>Business Administration</li>|<li>Psychology</li>|<li>Logic</li>|<li>Philosophy</li></ul>
+							</div>
+					</div>
+					</div>
+					<div id="projects" class="tab-section">
+						<h2>My Projects</h2>
+						<!-- DesignPLUS HTML Parser -->
+						<section class="project">
+							<h2>NMSU-A: DesignPlus HTML Parser</h2>
+							<hr>
+							<div class="project-images">
+								<figure>
+									<img src="Pictures/DsnPlsParser_Screenshot_1.jpg" alt="Screenshot of DesignPlus Parser Homescreen" height="280" class="project-images" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the Homepage</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/DsnPlsParser_Screenshot_2.jpg" alt="Screenshot of DesignPlus Parser Textbox Tab" height="280" class="project-images" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the Textbox Tab</figcaption>
+								</figure>
+								<figure>
+									<video src="Pictures/DsnPlsParser_Video.mp4" alt="Video Demonstrating the DesignPlus Parser use" height="280" controls></video>
+									<figcaption>Video Demonstrating the DesignPlus Parser use</figcaption>
+								</figure>
+							</div>
+							<hr style="margin-top: 20px;">
+							<h3>Description:</h3>
+							<p>The DesignPlus HTML Parser is a tool I designed to solve a very specific issue my department had while working on online courses. There was an issue with working with a legacy version of DesignPlus on Canvas where Online Learning was trying to change branding for the online courses, but there wasn't an easy way to implement complex styling at an efficient speed. I used principles I learned in my Python class and built a prototype to help me speed up adding the styling to NMSU-A courses. After I built a working prototype, I brought the concept to my boss and began working on a tool that my whole department could use without needing a comprehensive understanding of HTML and CSS. &nbsp;</p>
+							<h3>Key Features:</h3>
+							<ul>
+								<li>Formats clipboard contents for easy pasting back into Canvas.</li>
+								<li>Ensures H2 headers are properly structured and inserts progress bars where needed.</li>
+								<li>Applies predefined class attributes for uniform styling.</li>
+								<li>Removes redundant progress bars and correctly formats hidden elements.</li>
+								<li>Built using Python 3.11</li>
+							</ul>
+							<h3 style="padding-top: 10px;">Python Libraries Used:</h3>
+							<ul>
+								<li><a href="https://pypi.org/project/pyperclip/" target="blank">Pyperclip</a></li>
+								<li><a href="https://pypi.org/project/beautifulsoup4/" target="_blank">BeautifulSoup4</a></li>
+								<li><a href="https://customtkinter.tomschimansky.com/documentation/" target="_blank">CustomTkinter</a></li>
+								<li><a href="https://docs.python.org/3/library/tkinter.messagebox.html" target="_blank">Tkinter MessageBox</a></li>
+							</ul>
+							<a href="https://github.com/Smooken-Development/NMSU-A-CanvasDesignPlus-HTML-Parser" target="_blank" class="projectLink" style="margin-top: 20px;">View on GitHub</a>
+						</section>
+						<hr>
+						<!-- HeadSynk -->
+						<section class="project">
+							<h2>HeadSynk - A Behavioral Health Tracker</h2>
+							<hr>
+							<div class="project-images">
+								<figure>
+									<img src="Pictures/HeadSynk_Screenshot_1.jpg" alt="Screenshot of the Home Page" height="280" class="project-images" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the Homepage</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/HeadSynk_Screenshot_2.jpg" alt="Screenshot of" height="280" class="project-images" onclick="openImage(this.src)">
+									<figcaption>Screenshot of all pages in the app</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/HeadSynk_Screenshot_3.jpg" alt="Screenshot of" height="280" class="project-images" onclick="openImage(this.src)">
+									<figcaption>Screenshot of all entries filled with good results</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/HeadSynk_Screenshot_4.jpg" alt="Screenshot of" height="280" class="project-images" onclick="openImage(this.src)">
+									<figcaption>Screenshot of all entries filled with less than optimal results</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/HeadSynk_Screenshot_5.jpg" alt="Screenshot of" height="280" class="project-images" onclick="openImage(this.src)">
+									<figcaption>Screenshot of how the data is stored in the JSON file</figcaption>
+								</figure>
+							</div>
+							<hr style="margin-top: 20px;">
+							<h3>Description:</h3>
+							<p>HeadSynk is a Python-based application developed for CS 153: Python Programming at New Mexico State University Alamogordo. It is designed to track and analyze personal data over two weeks, featuring tools for tracking mood, food intake, water consumption, sleep, exercise, and journaling, helping users maintain consistency and meet their wellness goals. Developed by Zachary A. Carmichael and Shabhan Andrew George with contributions from Raena Martinez, William Jones, and Jason Edgington.</p>
+							<h3>Key Features:</h3>
+							<ul>
+								<li>Mood Tracker: Allows users to rate their daily mood on a scale from 1 to 5 and offers motivational messages.</li>
+								<li>Food Tracker: Logs intake of major food groups and encourages balanced eating habits.</li>
+								<li>Water Tracker: Tracks daily water intake and provides feedback to meet recommended goals.</li>
+								<li>Sleep Tracker: Logs hours of sleep and advises users for optimal rest.</li>
+								<li>Journal: A space for users to write down daily notes.</li>
+								<li>Badge System: Displays a badge image (unfinished).</li>
+								<li>Data Persistence: Saves data in 'user_data.json' with nested dictionaries.</li>
+							</ul>
+							<h3 style="padding-top: 10px;">Libraries Used:</h3>
+							<ul>
+								<li><a href="https://customtkinter.tomschimansky.com/documentation/" target="_blank">CustomTkinter</a></li>
+								<li><a href="https://pillow.readthedocs.io/en/stable/" target="_blank">PIL (Python Imaging Library)</a></li>
+								<li><a href="https://docs.python.org/3/library/datetime.html" target="_blank">Datetime</a></li>
+								<li><a href="https://docs.python.org/3/library/json.html" target="_blank">JSON</a></li>
+							</ul>
+							<a href="https://github.com/Smooken-Development/C-S-153-HeadSynk-Group-Project" target="_blank" class="projectLink">View on GitHub</a>
+						</section>
+						<hr>
+						<!-- OLC QuickInvoice -->
+						<!-- <section class="project">
+							<h2>OLC QuickInvoice</h2>
+							<hr>
+							<div class="project-images">
+								<figure>
+									<img src="Screenshot_1.jpg" alt="Screenshot of " height="280" class="project-images">
+									<figcaption>Screenshot of </figcaption>
+								</figure>
+								<figure>
+									<img src="2.jpg" alt="Screenshot of " height="280" class="project-images">
+									<figcaption>Screenshot of </figcaption>
+								</figure>
+								<figure>
+									<video src="Video.mp4" alt="Video Demonstrating " height="280" controls></video>
+									<figcaption>Video Demonstrating </figcaption>
+								</figure>
+							</div>
+							<hr style="margin-top: 20px;">
+							<h3>Description:</h3>
+							<p>Lorem ipsum information information. Placeholder for information about the project.&nbsp;</p>
+							<h3>Key Features:</h3>
+							<ul>
+								<li>Placeholder list</li>
+							</ul>
+							<h3 style="padding-top: 10px;">Libraries Used:</h3>
+							<ul>
+								<li><a href="https://pypi.org/project/pyperclip/" target="blank">Pyperclip</a></li>
+							</ul>
+							<a href="https://github.com/yourusername/project2" target="_blank" class="projectLink">View on GitHub</a>
+						</section> 
+						<hr>-->
+						
+						<!-- ByteBungalow -->
+						<section class="project">
+							<h2>ByteBungalow</h2>
+							<div class="project-images">
+								<figure>
+									<img src="Pictures/ByteBungalow_Homepage.jpg" alt="Screenshot of the CLI Homepage" class="project-images" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the CLI Homepage</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/ByteBungalow_Config_Demo.jpg" alt="Screenshot of Config Concept" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of Config Concept</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/ByteBungalow_DB_CLI.jpg" alt="Screenshot of the Database CLI" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the Database CLI</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/ByteBungalow_Listings.jpg" alt="Screenshot of Database Display" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of Database Display</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/ByteBungalow_TestUI.jpg" alt="Screenshot of Test UI" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of Test UI</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/ByteBungalow_Graph.jpg" alt="Screenshot of Concept Graph" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of Concept Graph</figcaption>
+								</figure>
+							</div>
+							<hr style="margin-top: 20px;">
+							<h3>Description:</h3>
+							<p>A webscraper and database to help you in your search for rental listings in any given city.<br>
+								The idea for this project is to be a one-stop database for you to quickly look at all listings in your area from some of the most popular websites
+								by ethically scraping publically accessible data for non-commercial purposes.<br>
+							This project was made purely as a educational effort for the CS 272 class at NMSU-A.</p>
+							<h3>Key Features:</h3>
+							<ul>
+								<li>The webscraper grabs publicly available listings data from rental sites.</li>
+								<li>BBDatabase is the custom database we use built on sqlite3 to store the scraped data.</li>
+								<li>BBsearch lets us sort through the data based on a listing object that queries the database based on shared attributes.</li>
+								<li>Data visualization uses mock data to give graphs based on site rent and rooms.</li>
+								<li>The Listings object is a custom object type that allows us to store attributes such as: name, rent, number of rooms, whether utilities are included, whether you have favorited the listing or not, etc.</li>
+							</ul>
+							<h3 style="padding-top: 10px;">Libraries Used:</h3>
+							<ul>
+								<li><a href="https://pypi.org/project/dash/" target="blank">Dash</a></li>
+								<li><a href="https://pypi.org/project/matplotlib/" target="blank">Matplotlib</a></li>
+								<li><a href="https://docs.python.org/3/library/sqlite3.html" target="blank">SQLite3</a></li>
+								<li><a href="https://pypi.org/project/requests/" target="blank">Requests</a></li>
+								<li><a href="https://pypi.org/project/beautifulsoup4/" target="blank">BeautifulSoup4</a></li>
+								<li><a href="https://pypi.org/project/playwright/" target="blank">Playwright</a></li>
+							</ul>
+							<a href="https://github.com/Smooken-Development/ByteBungalow" target="_blank" class="projectLink">View on GitHub</a>
+						</section>
+						<hr>
+						<!--GGEE's Inventory Management-->
+						<!--<section class="project">
+							<h2>GGEE's Inventory Management</h2>
+							<div class="project-images">
+								<img src="screenshot1.jpg" alt="Screenshot of Project 1">
+								<img src="screenshot2.jpg" alt="Screenshot of Project 1">
+							</div>
+							<p>Placeholder for GGEE's inventory management in C++ informations.</p>
+							<a href="https://github.com/yourusername/project2" target="_blank" class="projectLink">View on GitHub</a>
+						</section>
+						<hr> -->
+						<!--DaemonAuerelius-->
+						<!-- <section class="project">
+							<h2>--DaemonAuerelius--</h2>
+							<div class="project-images">
+								<img src="screenshot1.jpg" alt="Screenshot of Project 1">
+								<img src="screenshot2.jpg" alt="Screenshot of Project 1">
+							</div>
+							<p>Placeholder for a discord bot ARG I'm making</p>
+							<a href="https://github.com/yourusername/project2" target="_blank" class="projectLink">View on GitHub</a>
+						</section>
+						<hr> -->
+						<!--Flatland Espresso-->
+						<section class="project">
+							<h2>Flatland Espresso</h2>
+							<div class="project-images">
+								<figure>
+									<img src="Pictures/FlatlandHome.jpg" alt="Screenshot of Plateau Espresso's Homepage" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of Plateau Espresso's Homepage</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/FlatlandMenu.jpg" alt="Screenshot of the Ordering Page" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the Ordering Page</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/FlatlandStore.jpg" alt="Screenshot of a Store Page" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the Store Page</figcaption>
+								</figure>
+								<figure>
+									<img src="Pictures/FlatlandContact.jpg" alt="Screenshot of the Contact Page" width="200" onclick="openImage(this.src)">
+									<figcaption>Screenshot of the Contact Page</figcaption>
+								</figure>
+							</div>
+							<hr style="margin-top: 20px;">
+							<h3>Description</h3>
+							<p>This project is a group assignment for FDMA 1360 at New Mexico State University - Alamogordo (NMSU-A). The objective was to design and build an e-commerce website inspired by a real coffee shop, Plateau Espresso. The website showcases a fictional online presence for Plateau Espresso, featuring products, navigation, and design elements suited for an independent coffee shop. This project was a collaborative effort to apply web design principles in a practical, team-based environment. The team consisted of Valorie Adams, Darian Hendrickson, and myself. The project was part of the FDMA 1360 course at NMSU-A during the Spring 2025 semester.</p>
+							<a href="https://github.com/Smooken-Development/Flatland-Espresso" target="_blank" class="projectLink">View on GitHub</a>
+						</section>
+					</div>
+					<div id="education" class="tab-section">
+						<div class="educationSection">
+							<main>
+								<h2>Education</h2>
+								<h3>Degrees</h3>
+								<ul>
+									<li><a href="https://alamogordo.nmsu.edu/" target="_blank"><strong>New Mexico State University Alamogordo</strong></a> — <em>Associate of Applied Science in Computer Science</em>, 2025
+										<ul style="margin-left: 1rem;">
+											<li>Cummulative GPA: 3.9/4.0</li>
+										</ul>
+									</li>
+									<li><a href="https://www.nmt.edu/" target="_blank"><strong>New Mexico Institute of Mining and Technology</strong></a> — <em>Bachelor of Science in Computer Science</em>, Expected Spring 2028</li>
+									<ul style="margin-left: 1rem;">
+										<li>Cummulative GPA: <em>Newly Admitted</em></li>
+									</ul>
+									<li><a href="https://www.pennfoster.edu/" target="_blank"><strong>Penn Foster High School</strong></a> — <em>High School Diploma</em>, Dec 2021</li>
+									<ul style="margin-left: 1rem;">
+										<li>Cummulative GPA: 3.86/4.0</li>
+									</ul>
+								</ul>
+								<h3>Awards</h3>
+								<ul>
+									<li><Strong>Dean's List</Strong> at NMSU-A — <em>Fall 2022 and Spring 2024 - Spring 2025</em></li>
+									<li><Strong>Crimson Scholar Graduate</Strong> at NMSU-A — <em>Spring 2025</em></li>
+									<li><Strong><a href="https://www.ptk.org/" target="_blank">Phi Theta Kappa Honor Society</a></Strong> membership — <em>Fall 2023</em></li>
+									<li><Strong><a href="https://www.nsls.org/" target="_blank">National Society of Leadership and Success</a></Strong> membership — <em>Spring 2024</em></li>
+								</ul>
+								<h3>Noteable Coursework</h3>
+								<ul>
+									<li><strong>C S 172</strong> — Computer Science I (Java)</li>
+									<li><strong>C S 153</strong> — Python Programming</li>
+									<li><strong>C S 151</strong> — C++ Programming</li>
+									<li><strong>C S 271</strong> — Object Oriented Programming (C#)</li>
+									<li><strong>C S 117</strong> — Computer Animation (Blender)</li>
+									<li><strong>C S 278</strong> — Discrete Mathematics for Computer Science</li>
+									<li><strong>OECS 204</strong> — Linux Operating Systems</li>
+									<li><strong>FDMA 1360</strong> — Web Design I</li>
+									<li><strong>C S 272</strong> — Intro to Data Structures</li>
+								</ul>
+							</main>
+						</div>
+					</div>
+					<div id="community" class="tab-section">
+						<div class="communitySection">
+							<h2>Community Involvement</h2>
+						
+							<h3>Phi Theta Kappa</h3>
+							<p>I was formerly the <em>Vice President of Leadership</em> and <em>Recording Secretary</em> for the <a href="https://www.ptk.org/join/alpha-nu-beta-chapter/">Alpha Nu Beta Chapter of Phi Theta Kappa</a> at New Mexico State University-Alamogordo. I have been involved in the following projects:</p>
+							<ul>
+							<li>Fundraising and planning for PTK's biannual Pub-Style Quiz Nights</li>
+							<li>Planning and organizing seasonal events within the chapter</li>
+							<li>Planning and organizing trips for the New Mexico Region PTK Conferences</li>
+							<li>Planning and coordinating the 2024 Fall and 2025 Spring Induction Ceremonies</li>
+							</ul>
+
+							<h4>Responsibilities</h4>
+							<ul>
+							<li><strong>Vice President of Leadership:</strong>
+								<ul>
+									<li>Facilitate leadership development through workshops and events</li>
+									<li>Promote member engagement in chapter projects and leadership roles</li>
+									<li>Support the President and participate in strategic planning</li>
+									<li>Lead chapter initiatives aligned with PTK’s four pillars</li>
+									<li>Serve as the Interim President in the event of a President’s absence</li>
+								</ul>
+							</li>
+							<br>
+							<li><strong>Recording Secretary:</strong>
+								<ul>
+									<li>Recorded and distributed minutes for meetings</li>
+									<li>Maintained accurate documentation of chapter activities and events</li>
+									<li>Managed internal and external correspondence</li>
+									<li>Organized chapter records for continuity and archival purposes</li>
+								</ul>
+							</li>
+							</ul>
+							<br>
+						
+							<h3>St. Jude's Catholic Church</h3>
+							<p>After completing a little over 60 hours of community service before I was 17—due to having previously belonged to two different dioceses—I briefly served as a Confirmation mentor in 2019–2020. I helped guide teens in their spiritual journey until I parted ways with the church during the COVID-19 pandemic. My volunteer work included assisting with church events and supporting students during their preparation process.</p>
+
+							<h3>Merit Page</h3>
+							<p><Strong><a href="https://meritpages.com/Zachary-Carmichael/8372563" target="_blank">My Merit Page can be found here</a>.</Strong></p>
+						</div>
+					</div>
+					<div id="cv" class="tab-section">
+						<div class="cv-section">
+							<h2>My CV</h2>
+							<p><a><a href="Quantinuum2025-Resume.pdf" target="_blank">Click here to open my CV as a PDF</a></p>
+							<div class="cv-pdf">
+								<iframe src="Quantinuum2025-Resume.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<div id="extras" class="tab-section">
+						<div class="extraSection">
+							<h2>Extras</h2>
+							<div class="image-grid">
+								<div class="image-container">
+									<img src="Pictures/_DSC8737.jpeg" alt="Me giving a speech at a PTK Induction Ceremony" onclick="openImage(this.src)">
+									<p>Me giving a speech at the Fall 2024 PTK Induction Ceremony</p>
+								</div>
+								<div class="image-container">
+									<img src="Pictures/backg2.jpg" alt="3D Landscape" onclick="openImage(this.src)">
+									<p>3D Road Landscape</p>
+								</div>
+								<div class="image-container">
+									<img src="Pictures/Cherry Tree Background.jpg" alt="3D Cherry Tree" onclick="openImage(this.src)" onclick="openImage(this.src)">
+									<p>Low Poly Cherry Tree</p>
+								</div>
+								<div class="image-container">
+									<img src="Pictures/Engulfed.jpg" alt="Sideways Crystal Statue" onclick="openImage(this.src)">
+									<p>A sideways statue engulfed in black crystals and orbs</p>
+								</div>
+								<div class="image-container">
+									<img src="Pictures/Face.jpg" alt="3D Model" onclick="openImage(this.src)">
+									<p>Glass Face</p>
+								</div>
+								<div class="image-container">
+									<img src="Pictures/MonsterDesign.jpg" alt="3D Monster Model" onclick="openImage(this.src)">
+									<p>A Sculpted Monster Design</p>
+								</div>
+								<div class="image-container">
+									<img src="Pictures/mountain.jpg" alt="A low poly 3D mountain" onclick="openImage(this.src)">
+									<p>A low poly 3D mountain range</p>
+								</div>
+								<div class="image-container">
+									<img src="Pictures/Painting.jpg" alt="3D Painting Render" onclick="openImage(this.src)">
+									<p>A render of a 3D painting at the end of a dark hallway</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			</main>
+			<!--<aside id="aside2">Animation 2</aside>-->
+		</div>
+	<footer style="background-color: #333; color: #fff; padding: 20px; text-align: center; margin-bottom: 0;">
+	  <p>&copy; 2025 | Zachary A. Carmichael | All Rights Reserved</p>
+	  <p>Connect with me:</p>
+	  <ul style="list-style: none; padding: 0;">
+		<li style="display: inline; margin-right: 10px;">
+		  <a href="https://www.linkedin.com/in/zachary-carmichael-86237b32a/">LinkedIn</a>
+		</li>
+		<li style="display: inline; margin-right: 10px;">
+		  <a href="https://github.com/Smooken-Development">GitHub</a>
+		</li>
+		<li style="display: inline; margin-right: 10px;">
+		  <a href="mailto:ZacAC2024@outlook.com">Email</a>
+		</li>
+	  </ul>
+	</footer>
+	
+</body>
+	
+	<script>
+		const images = document.querySelectorAll("img[data-src]");
+		
+		const loadImages = (entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const image = entry.target;
+					image.src = image.dataset.src;
+					observer.unobserve(image);
+				}
+			});
+		};
+		
+		const imageObserver = new IntersectionObserver(loadImages, {
+			root: null,
+			rootMargin: "0px",
+			threshold: 1.0
+		});
+		
+		images.forEach(image => {
+			imageObserver.observe(image);
+		});
+		
+		
+		const tabs = document.querySelectorAll(".tabsButton");
+		const tabSections = document.querySelectorAll(".tab-section");
+
+		for(let tab of tabs) {
+			
+			console.log(tab)
+
+			tab.addEventListener("click", function() {
+				tabs.forEach(t => t.classList.remove("active"));
+				this.classList.add("active");
+				tabSections.forEach(section => section.classList.remove("active"));
+				const tabId = tab.dataset.id;
+				console.log(tabId)
+				document.getElementById(tabId).classList.add("active");
+			});
+			
+		}
+
+		function openImage(src) {
+								var img = new Image();
+								img.src = src;
+								img.onload = function(){
+									var w = window.open("", "", "width=800,height=600");
+									w.document.write("<img src='" + src + "' width='800' height='600' />");
+								}
+							}
+		
+	</script>
+	
+</html>
